@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e2f2540-7aab-451b-9acb-9b84603e7f7f" name="Default Changelist" comment="" />
+    <list default="true" id="6e2f2540-7aab-451b-9acb-9b84603e7f7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/europa/nio_multithread/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/europa/nio_multithread/IOHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/europa/nio_multithread/Reactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/europa/nio_multithread/Server.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="20imi791eOmQH2A6zaLy8mng7ay" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,21 +42,40 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5592635" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.Client (1)">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.europa.nio_multithread" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client (2)">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.europa.nio.Client" />
       <module name="j1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.europa.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.europa.nio_multithread.Client" />
+      <module name="j1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.europa.nio_multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,42 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.europa.netty.Server" />
+    <configuration name="Server (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.europa.nio_multithread.Server" />
       <module name="j1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.europa.netty.*" />
+          <option name="PATTERN" value="cn.europa.nio_multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.testChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="j1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.europa.chain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.europa.chain" />
-      <option name="MAIN_CLASS_NAME" value="cn.europa.chain.Test" />
-      <option name="METHOD_NAME" value="testChain" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (2)" />
+        <item itemvalue="Application.Server (2)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Server (1)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="JUnit.Test.testChain" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636535906646</updated>
       <workItem from="1636535908490" duration="22378000" />
-      <workItem from="1636940535917" duration="10864000" />
+      <workItem from="1636940535917" duration="27789000" />
     </task>
     <servers />
   </component>
@@ -139,58 +151,70 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="773" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1636626667420">
+    <state x="773" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1637053123434">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="773" y="247" key="#com.intellij.ide.util.MemberChooser/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636626667420" />
+    <state x="773" y="247" key="#com.intellij.ide.util.MemberChooser/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637053123434" />
     <state x="553" y="192" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1636535919268">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="553" y="192" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636535919268" />
-    <state width="475" height="630" key="DebuggerActiveHint" timestamp="1636681951462">
+    <state x="751" y="332" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1637050340784">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="475" height="630" key="DebuggerActiveHint/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636681951462" />
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1637042797471">
+    <state x="751" y="332" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637050340784" />
+    <state x="698" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637048495955">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637042797471" />
-    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1637042797469">
+    <state x="698" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637048495955" />
+    <state width="491" height="630" key="DebuggerActiveHint" timestamp="1637120793657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637042797469" />
-    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1637042797468">
+    <state width="491" height="630" key="DebuggerActiveHint/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637120793657" />
+    <state width="1878" height="445" key="GridCell.Tab.0.bottom" timestamp="1637121287445">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637042797468" />
-    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1637042797470">
+    <state width="1878" height="445" key="GridCell.Tab.0.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287445" />
+    <state width="1878" height="445" key="GridCell.Tab.0.center" timestamp="1637121287442">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637042797470" />
-    <state width="1878" height="549" key="GridCell.Tab.1.bottom" timestamp="1636713540628">
+    <state width="1878" height="445" key="GridCell.Tab.0.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287442" />
+    <state width="1878" height="445" key="GridCell.Tab.0.left" timestamp="1637121287441">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="549" key="GridCell.Tab.1.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636713540628" />
-    <state width="1878" height="549" key="GridCell.Tab.1.center" timestamp="1636713540626">
+    <state width="1878" height="445" key="GridCell.Tab.0.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287441" />
+    <state width="1878" height="445" key="GridCell.Tab.0.right" timestamp="1637121287444">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="549" key="GridCell.Tab.1.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636713540626" />
-    <state width="1878" height="549" key="GridCell.Tab.1.left" timestamp="1636713540625">
+    <state width="1878" height="445" key="GridCell.Tab.0.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287444" />
+    <state width="1878" height="445" key="GridCell.Tab.1.bottom" timestamp="1637121287450">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="549" key="GridCell.Tab.1.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636713540625" />
-    <state width="1878" height="549" key="GridCell.Tab.1.right" timestamp="1636713540627">
+    <state width="1878" height="445" key="GridCell.Tab.1.bottom/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287450" />
+    <state width="1878" height="445" key="GridCell.Tab.1.center" timestamp="1637121287447">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="549" key="GridCell.Tab.1.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636713540627" />
-    <state x="491" y="176" width="1047" height="728" key="SettingsEditor" timestamp="1637034402705">
+    <state width="1878" height="445" key="GridCell.Tab.1.center/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287447" />
+    <state width="1878" height="445" key="GridCell.Tab.1.left" timestamp="1637121287446">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="491" y="176" width="1047" height="728" key="SettingsEditor/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637034402705" />
+    <state width="1878" height="445" key="GridCell.Tab.1.left/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287446" />
+    <state width="1878" height="445" key="GridCell.Tab.1.right" timestamp="1637121287448">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="445" key="GridCell.Tab.1.right/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637121287448" />
+    <state x="491" y="176" width="1047" height="728" key="SettingsEditor" timestamp="1637059502001">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="491" y="176" width="1047" height="728" key="SettingsEditor/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637059502001" />
     <state x="641" y="275" width="637" height="530" key="find.popup" timestamp="1636944323466">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="641" y="275" width="637" height="530" key="find.popup/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1636944323466" />
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup" timestamp="1637120586534">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup/1920.0.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1637120586534" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1636944709967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
